@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+</head>
+<style>
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.jokediv {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.joke {
+  color: #333;
+  background-color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.joke:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#loading {
+  font-style: italic;
+  font-weight: normal;
+  color: #777;
+}
+
+</style>
+<body>
+    <div class="jokediv">
+        <h1>Jokes</h1>
+        <p class="joke" id="joke"><span id="loading">Loading</span></p>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
